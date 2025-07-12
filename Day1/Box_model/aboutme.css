@@ -48,16 +48,3 @@ button:hover {
   border: none;
   cursor: pointer;
 }
-
-.displaymode {
-  width: 100%; 
-}
-
-.box1 {
-  display: inline;
-  background-color: #fff;
-}
-
-.box2 {
-  background-color: #fca311;
-}
