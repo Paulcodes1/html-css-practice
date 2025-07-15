@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  padding: 50px;
+}
+
+.quote_card {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: "Playfair Display", serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 30px;
+  border: 2px dotted #ffa500;
+  border-left: 5px solid #ffa500;
+}
+
+h3 {
+  text-align: right;
+  margin-top: 50px;
+  font-weight: 700;
+  word-spacing: 4px;
+}
+
+p {
+  letter-spacing: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+em {
+  color: #ffa500;
+  font-weight: 900;
+  font-size: 32px;
+}
