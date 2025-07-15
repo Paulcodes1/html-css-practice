@@ -23,7 +23,7 @@ body {
   border-left: 5px solid #ffa500;
 }
 
-h3 {
+/* h3 {
   text-align: right;
   margin-top: 50px;
   font-weight: 700;
@@ -41,4 +41,36 @@ em {
   color: #ffa500;
   font-weight: 900;
   font-size: 32px;
+} */
+
+blockquote {
+  font-style: italic;
+  quotes: "“" "”";
+  position: relative;
+}
+
+blockquote::before {
+  content: open-quote;
+  color: orange;
+  font-size: 2rem;
+  position: absolute;
+  left: -1rem;
+  top: -0.5rem;
+}
+
+blockquote::after {
+  content: close-quote;
+  color: orange;
+  font-size: 2rem;
+  position: absolute;
+  right: 11rem;
+  top: 1rem;
+}
+
+cite {
+  display: block;
+  text-align: right;
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: bold;
 }
