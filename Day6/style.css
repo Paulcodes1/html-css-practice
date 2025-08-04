@@ -93,9 +93,52 @@ button:hover {
   color: #0099cc;
 }
 
+.about {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
 .about img {
   max-width: 500px;
   height: 400px;
   border-radius: 50%;
-  display: inline-flex;
+  margin: 1rem 0;
+}
+
+.about-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.quote {
+  padding: 2rem 0;
+}
+
+blockquote {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-style: italic;
+}
+
+cite {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer {
+  width: 60%;
+  margin: 2rem auto;
+  text-align: center;
+  margin-top: 2rem;
 }
