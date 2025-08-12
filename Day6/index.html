@@ -14,31 +14,38 @@
     <title>Personal Bio</title>
   </head>
   <body>
-    <header>PAUL OFILI</header>
-    <nav>
-      <ul>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact Me</a></li>
-      </ul>
-    </nav>
+    <header>
+      <div class="logo">
+        <h1>PAUL OFILI</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <section class="hero">
-        <h1>Hi, I'm Paul Ofili</h1>
-        <p>Aspiring Frontend Developer</p>
-        <button class="cta">View My Work</button>
-      </section>
-      <section  class="about">
+        <div class="hero-text">
+          <h1>Hi, I'm Paul Ofili</h1>
+          <p>Aspiring Frontend Developer</p>
+          <button class="cta">View My Work</button>
+        </div>
         <div class="image">
           <img src="./assets/images/My picture.jpg" alt="My profile image">
-        </div>
+        </div>  
+      </section>
+      <section  class="about">
+        <h2 id="aboutme">About Me</h2>
         <div class="about-text">
           <p>I'm a dedicated individual, giving myself to master frontend development and being the best at it. I hope to work with you on your projects as I develop more experience and skill.</p>
         </div> 
       </section>
       <section class="quote">
         <blockquote>
-          Paul has such a great attention to details, it was nice working with you
+          "Paul has such a great attention to details, it was nice working with you"
         </blockquote>
         <cite class="author">- Peter  Ofili</cite>
       </section>
