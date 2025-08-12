@@ -102,6 +102,8 @@ button:hover {
 .about {
   padding-top: 3rem;
   text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 #aboutme {
@@ -127,15 +129,16 @@ blockquote {
   text-align: center;
   font-style: italic;
   quotes: "“" "”";
+  position: relative;
 }
 
 blockquote::before {
   content: open-quote;
   color: orange;
-  font-size: 2rem;
+  font-size: 3rem;
   position: absolute;
-  left: -1rem;
-  top: -0.5rem;
+  left: .2rem;
+  top: -1.2rem;
 }
 
 cite {
@@ -151,6 +154,11 @@ cite {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.contact i:hover {
+  transform: scale(1.05);
+  transition: .3s ease;
 }
 
 .footer {
