@@ -10,13 +10,17 @@ body {
 }
 
 header {
-  text-align: center;
-  padding: 2rem 4rem;
   background-color: #0099cc;
   color: #ffffff;
+}
+
+.header {
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2rem 4rem; 
+  margin: 0 auto;
 }
 
 .logo h1{
@@ -45,12 +49,8 @@ li a:hover {
 main, footer {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 1rem 4rem;
 }
-
-/* section {
-  width: 60%;
-  margin: 2rem auto;
-} */
 
 .hero {
   display: flex;
@@ -154,6 +154,7 @@ cite {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  cursor: pointer;
 }
 
 .contact i:hover {
@@ -166,4 +167,20 @@ cite {
   margin: 2rem auto;
   text-align: center;
   margin-top: 2rem;
+}
+
+@media  (max-width: 599px) {
+  .header {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .quote {
+    width: 100%;
+  }
 }
