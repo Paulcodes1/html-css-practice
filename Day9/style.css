@@ -11,23 +11,56 @@ body {
 }
 
 .container {
-  max-width: 1100px;
-  margin: 4rem auto;
+  width: 100%;
 }
 
 .card {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  
+  background-color: pink;
+  margin: 0 auto;
 }
 
 .card-content {
+  flex-shrink: 1;
   text-align: center;
-  flex-wrap: wrap;
+  padding: 2rem 0;
+  margin: 2rem;
 }
 
-figure img {
-  max-width: 30%;
+.card-content img {
+  width: 200px;
   height: auto;
+}
+
+.card-content p {
+  text-align: center;
+}
+
+button {
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(.9);
+  transition: .3s ease-in;
+}
+
+.card-content:nth-child(odd), .card-content:nth-child(even) {
+  border-radius: 10px;
+}
+
+.card-content:nth-child(odd):hover {
+  box-shadow: -2px 1px 6px -1px yellow;
+  transition: .4s ease;
+}
+
+.card-content:nth-child(even):hover {
+  box-shadow: 2px 2px 2px 2px #f6f6f6 inset;
+  transition: .4s ease;
 }
